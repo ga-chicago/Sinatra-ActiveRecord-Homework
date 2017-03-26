@@ -1,2 +1,6 @@
 require 'sinatra/base'
-require 'controllers/ApplicationController'
+
+
+require './controllers/ApplicationController'
+
+map('/') {run ApplicationController}
