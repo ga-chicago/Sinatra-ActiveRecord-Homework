@@ -28,6 +28,14 @@ get '/mexicanFood'do
   erb :mexican
 end
 
-
+get '/mexicanerb/:id' do
+  @id = params[:id]
+  @name = params[:name]
+  @calories = params[:calories]
+  @carbs = params[:carbs]
+  @protein = params[:protein]
+  @healthy = params[:healthy]
+  erb :mexicanerb
+end
 
 end
