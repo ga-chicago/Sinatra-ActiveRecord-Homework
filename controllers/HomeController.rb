@@ -26,7 +26,7 @@ class HomeController < ApplicationController
 		redirect '/home'
 	end
 
-	patch '/home/:id' do
+	patch '/home/' do
 		id = params[:id]
 		data = eval(request.body.read)
 
@@ -40,7 +40,7 @@ class HomeController < ApplicationController
 	end
 
 	delete '/home/:id' do
-		id = params[:id]
+		id = Burrito.find(params[:id]).destroy
 		"Success"
 	end
 end

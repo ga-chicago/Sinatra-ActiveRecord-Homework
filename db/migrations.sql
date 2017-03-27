@@ -1,3 +1,5 @@
+-- psql -a -f migrations.sql
+
 CREATE DATABASE mexican_food;
 
 \c mexican_food;

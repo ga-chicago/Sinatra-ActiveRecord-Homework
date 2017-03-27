@@ -1,0 +1,14 @@
+<body>
+	<h1>Burritos</h1>
+		<ul>
+			<% @burritos.each do |burrito| %>
+				<li>
+					Name = <%= burrito.name %> <br>
+					Protein = <%= burrito.protien %> <br>
+					Wrapped or nah? <%= burrito.wrapped %> <br>
+					Spicy level = <%= burrito.spicy %><br>
+					Price = <%= burrito.price %>
+				</li>
+			<% end %>
+		</ul>
+</body>
