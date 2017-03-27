@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Home</title>
+		<link href="styles/styles.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+
+		<h1>More Info on the Sandwiches</h1>
+
+		<% @sandwiches.each do |sandwich| %>
+			<div>
+				<h3>
+					Try some <%= sandwich.contents %> on a <%= sandwich.bread %>. It has a health rating of <%= sandwich.health %>, a creativity level of <%= sandwich.creativity %> out of 5 and a difficulty level of <%= sandwich.difficulty %> out of 5. Enjoy!
+				</h3>
+			</div>
+			<br>
+		<% end %>
+
+		<script src="/scripts/app2.js"></script>
+	</body>
+</html>

@@ -7,6 +7,13 @@ class SandwichController < ApplicationController
 		erb :home
 	end
 
+	get ('/more') do
+
+		@sandwiches = Sandwich.all
+
+		erb :moresandwiches
+	end
+
 	post ('/sandwiches') do
 
 		puts '-----------------'
@@ -30,6 +37,6 @@ class SandwichController < ApplicationController
 		@sandwich.to_json
 	end
 
-	
+
 
 end
