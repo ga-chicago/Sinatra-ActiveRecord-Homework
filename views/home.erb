@@ -1,22 +1,33 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-</head>
-<body>
+	<head>
+		<meta charset="utf-8">
+
+		<title> Home </title>
+		<link href="styles/style.css" rel="stylesheet">
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+
+	
+
+	<h1> Tonights Leading Scorers! </h1>
+
+	<% @player.each do |player| %>
+
+	<ol>
+		<li> <%= player.name %> </li>
+	</ol>
+
+	<%end%>
 
 
-<form>
-  Username:
-  <input type="text" name="name"><br>
-  Password:
-  <input type="text" name="password">
-  <br><br>
-
-  <button> Submit </button>
-
-</form>
 
 
-</body>
+
+		<script src="/scripts/app.js"></script>
+	</body>
 </html>

@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/mikeabood/Sinatra-ActiveRecord-Homework/issues"
   },
-  "homepage": "https://github.com/mikeabood/Sinatra-ActiveRecord-Homework#readme"
+  "homepage": "https://github.com/mikeabood/Sinatra-ActiveRecord-Homework#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-watch": "^4.3.11"
+  }
 }

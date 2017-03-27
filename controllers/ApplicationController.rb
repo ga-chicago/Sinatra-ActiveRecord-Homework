@@ -11,7 +11,7 @@ enable :sessions
 #defining the type of SQL being used and name of database
 ActiveRecord::Base.establish_connection(
 	:adapter  => 'postgresql',
-	:database => 'sess_hw'
+	:database => 'activerecord_hw'
 	)
 
 #telling the server where to find the 'views' and 'public' folder

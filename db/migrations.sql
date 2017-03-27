@@ -1,5 +1,5 @@
-CREATE DATABASE sess_hw;
+CREATE DATABASE activerecord_hw;
 
-\c sess_hw;
+\c activerecord_hw
 
-CREATE TABLE login_info (id SERIAL PRIMARY KEY, username varchar(255), password varchar(255)); 
+CREATE TABLE players (id SERIAL PRIMARY KEY, name varchar(255), position varchar(255), height INT, ppg INT, college varchar(255));
