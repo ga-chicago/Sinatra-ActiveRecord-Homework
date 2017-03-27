@@ -3,17 +3,17 @@ Sinatra-ActiveRecord-Homework
 
 
 1.  Create a modular Sinatra Application (should have application controller)
-2.  Create a migrations.sql file in your db folder
-3.  What does that file represent?
-4.  Create a table that has five columns
-5.  Paste your your migrations file into sql
-6.  Create a model that is named after your tablename which is singular (ex. 'users' => ClassName = User
-6.  Create a controller that allows you to do crud operations on your data, using your model.
-7.  Populate your database with at least ten entries
-8.  Create a view that renders all of your database entries (retrieve this data via ajax) Create all the markup via Javascript, 
+x2.  Create a migrations.sql file in your db folder
+x3.  What does that file represent?
+x4.  Create a table that has five columns
+x5.  Paste your your migrations file into sql
+x6.  Create a model that is named after your tablename which is singular (ex. 'users' => ClassName = User
+x6.  Create a controller that allows you to do crud operations on your data, using your model.
+x7.  Populate your database with at least ten entries
+x8.  Create a view that renders all of your database entries (retrieve this data via ajax) Create all the markup via Javascript, 
 your html page should be blank except for your links.
 9. Create another view that renders all of your database entries using The sinatra erb variables (Check the gitbook, erb in depth for example)
-10.  Create a gulp file and do some styling in less.
+x10.  Create a gulp file and do some styling in less.
 
 
 ## Extra Credit: 
