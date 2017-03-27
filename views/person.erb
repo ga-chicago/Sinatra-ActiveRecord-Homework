@@ -1,0 +1,77 @@
+<div class="container">
+
+    <div class="row">
+
+        <div class="four columns edit">
+            <button id="edit">Edit</button>
+        </div>
+
+        <div class="eight columns delete">
+            <button id="delete">Delete</button>
+        </div>
+
+    </div>
+
+    <% @persons.each do |person| %>
+
+        <div class="row datarow">
+
+            <div class="six columns">
+
+                <h3>First Name:<span><%= person.first_name %></span></h3>
+
+            </div>  <!-- six columns -->
+
+            <div class="six columns">
+
+                <h3>Last Name:<span><%= person.last_name %></span></h3>
+
+            </div>  <!-- six columns -->
+
+            <div class="twelve columns">
+
+                <h3>Sex:<span>
+                    <% if person.sex = 'male' %>
+                        Male
+                    <% else %>
+                        Female
+                    <% end %></span>
+                </h3>
+                <h3>Age:<span><%= person.age %></span></h3>
+                <h3>Married:<span>
+                    <% if person.married %>
+                        Yes
+                    <% else %>
+                        No
+                    <% end %></span>
+                </h3>
+
+                <h3 id="recordId"><%= person.id %></h3>
+
+            </div>  <!-- twelve columns -->
+
+        </div>  <!-- row -->
+
+    <% end %>
+
+    <div class="row">
+
+        <div class="four columns previous">
+            <button id="previous">Previous</button>
+        </div>
+
+        <div class="eight columns next">
+            <button id="next">Next</button>
+        </div>
+
+        <div class="twelve columns firstrecord">
+            <h4>You have reached the first record.</h4>
+        </div>
+
+        <div class="twelve columns lastrecord">
+            <h4>You have reached the last record.</h4>
+        </div>
+
+    </div>
+
+</div>
