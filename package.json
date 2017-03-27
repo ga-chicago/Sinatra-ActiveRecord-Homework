@@ -1,0 +1,19 @@
+{
+  "name": "ls",
+  "version": "1.0.0",
+  "description": "Sinatra-ActiveRecord-Homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikeabood/Sinatra-ActiveRecord-Homework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikeabood/Sinatra-ActiveRecord-Homework/issues"
+  },
+  "homepage": "https://github.com/mikeabood/Sinatra-ActiveRecord-Homework#readme"
+}
