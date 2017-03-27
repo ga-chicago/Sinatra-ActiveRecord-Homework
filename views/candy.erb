@@ -1,0 +1,25 @@
+<h1>CANDDDDDYYY</h1>
+
+
+<form action= "/candy" method="POST">
+<input type ="text" name="type" placeholder="Type"/>
+<input type ="text" name="sweetness" placeholder="sweetness"/>
+<label for="health">healthy</label><input id="health" type="checkbox" name="health" placeholder="health"/>
+<input type ="text" name="price" placeholder="Price"/>
+<button>Submit</button>
+
+<ul>
+
+<% @candies.each do |candy| %>
+
+	<li>
+	<input class="type" value="<%= candy.type %>"/>
+	<input class="sweetness" value ="<%= candy.sweetness %>"/>
+	<input class="price" value = "<%= '%.2f' candy.price %>"/>
+	<input class="health" value ="<%= candy.health %>"/>
+	<button class="update" data-id<%= candy.id%>>Update</button>
+	<button class="delete" data-id=<%= candy.id%>>Delete</button>
+	</li>
+
+<% end %>
+</ul>
