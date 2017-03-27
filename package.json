@@ -1,0 +1,19 @@
+{
+  "name": "sinatra-activerecord-homework",
+  "version": "1.0.0",
+  "description": "Sinatra-ActiveRecord-Homework",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theprosumer/Sinatra-ActiveRecord-Homework.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theprosumer/Sinatra-ActiveRecord-Homework/issues"
+  },
+  "homepage": "https://github.com/theprosumer/Sinatra-ActiveRecord-Homework#readme"
+}
