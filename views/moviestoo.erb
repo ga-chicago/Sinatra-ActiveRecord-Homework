@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<h1>My Movies</h1>
+
+<% @film.each do |movie| %>
+
+  <li>
+  <%= movie.title %> 
+  </li>
+
+<% end %>
+
+</body>
+</html>
