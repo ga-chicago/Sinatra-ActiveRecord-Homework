@@ -1,0 +1,40 @@
+<div class="container">
+
+    <div class="row">
+        <div class="twelve columns">
+
+            <h1>Add a Person</h1>
+
+            <form action="/person/add" method="POST">
+                <input type="text" name="first_name" placeholder="First Name">
+                <input type="text" name="last_name" placeholder="Last Name">
+
+                <label>Sex</label>
+                <label for="male">
+                    <input type="radio" name="sex" id="male" value="male" checked />
+                    <span class="label-body">Male</span>
+                </label>
+                <label for="female">
+                    <input type="radio" name="sex" id="female" value="female" />
+                    <span class="label-body">Female</span>
+                </label>
+
+                <input type="number" name="age" placeholder="Age">
+
+                <label>Married</label>
+                <label for="yes">
+                    <input type="radio" name="married" id="yes" value="t" checked />
+                    <span class="label-body">Yes</span>
+                </label>
+                <label for="no">
+                    <input type="radio" name="married" id="no" value="f" />
+                    <span class="label-body">No</span>
+                </label>
+
+                <input type="submit" value="Add Person">
+            </form>
+
+        </div>
+    </div>
+
+</div>
