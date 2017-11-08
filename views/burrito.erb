@@ -1,0 +1,27 @@
+<body>
+<h1>Burritos</h1>
+<form action='/home' method='post'>
+	<input type="text" name="name" placeholder="Name">
+	<input type="text" name="protien" placeholder="Protein">
+	<label for="wrapped">Wrapped</label><input id="wrapped" type="checkbox" name="wrapped">
+	<!-- <input type="text" name="wrapped" placeholder="Wrapped or nah?"> -->
+	<input type="text" name="spicy" placeholder="1-10, how spicy?">
+	<input type="text" name="price" placeholder="Price?">
+	<button type="submit" value="submit">SAVE IT!</button>
+</form>
+	
+		<ul>
+			<% @burritos.each do |burrito| %>
+				<li>
+					Name = <input class="name" value="<%= burrito.name %>"/> <br>
+					Protein = <input class="name" value="<%= burrito.protien %>"/> <br>
+					Wrapped or nah? <input class="name" value="<%= burrito.wrapped %>"/> <br>
+					Spicy level = <input class="name" value="<%= burrito.spicy %>"/><br>
+					Price = $<input class="name" value="<%= burrito.price %>"/><br>
+					<button id="update" class="id" data-id=<%= burrito.id %>>Update</button>
+					<button id="delete" class="delete" data-id=<%= burrito.id %>>Delete</button><br>
+
+				</li>
+			<% end %>
+		</ul>
+</body>
