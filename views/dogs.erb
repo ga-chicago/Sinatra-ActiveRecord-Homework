@@ -1,0 +1,11 @@
+<h1>Dogs</h1>
+
+<% @dogs.each do |dog|%>
+	<ul>
+		<li>Name: <%= dog.name%>
+		<li>Breed: <%= dog.breed%></li>
+		<li>Gender: <%= dog.gender%></li>
+		<li>Good Boy/Girl: <%= dog.goodboy%></li>
+		<li>Age:<%= dog.age%></li>
+	</ul>
+<%end%>

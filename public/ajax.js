@@ -1,14 +1,18 @@
 $.ajax({
-	url: 'http://localhos:9292/dogs',
+	url: '/dogs/doggos',
 	type: 'GET',
-	dataType: 'Json',
+	dataType: 'JSON',
 	success: (res)=>{
+		const $div = $('<div>');
 		res.forEach((el)=>{
-			console.log(el)
-			const $div = $('<div>');
+			const $h1 = $('<h1>');
+			$h1.text(el.name)
+			$div.append($h1)
 			for (variable in el){
+				if(variable === 'id' || variable === 'name')
+					continue;
 				const $li = $('<li>');
-				$li.text(variable);
+				$li.text(el[variable]);
 				$div.append($li);
 			}
 		})

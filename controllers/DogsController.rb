@@ -1,7 +1,17 @@
-class DogsController < Sinatra::Base
+class DogsController < AppController
 	get '/' do
+		erb :home
+	end
+
+	get '/doggos' do
 		@dogs = Dog.all
 		@dogs.to_json
+	end
+
+	get '/pupper' do
+		@dogs = Dog.all
+		@dogs.to_json
+		erb :dogs
 	end
 
 	post '/' do
