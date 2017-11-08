@@ -4,7 +4,7 @@ class ApplicationController < Sinatra::Base
 	Bundler.require
 	ActiveRecord::Base.establish_connection(
 			:adapter => 'postgresql',
-			:database => 'food'
+			:database => 'pokemon'
 		)
 	set :views, File.expand_path('../../views',__FILE__)
 	get '/' do 	

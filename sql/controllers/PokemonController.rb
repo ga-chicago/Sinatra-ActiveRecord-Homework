@@ -1,7 +1,7 @@
 class PokemonController < ApplicationController
 	get '/' do
 		@poke = Poke.all
-		@poke.to_json
+		erb :Poke
 	end
 
 	post '/' do
