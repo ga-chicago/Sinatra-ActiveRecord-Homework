@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title> Home </title>
+		<link href="styles/style.css" rel="stylesheet">
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+
+	
+
+	<h1> Tonights Leading Scorers! </h1>
+
+	<% @player.each do |player| %>
+
+	<ol>
+		<li> <%= player.name %> </li>
+	</ol>
+
+	<%end%>
+
+
+
+
+
+		<script src="/scripts/app.js"></script>
+	</body>
+</html>
